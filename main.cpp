@@ -1,61 +1,41 @@
 #include <iostream>
+#include <string>
+#include <iomanip>
 
 using namespace std;
 /* *
- * Section 2: Fundamentals
+ * Section 3: Control Statements
  *
  * Objectives
  * ----------
  * * * * * * */
- // * - Variables & Data Types
- int runVariablesModule() {
-     cout << "Running THe Variables Module..." << endl;
-
-     return 0;
- }
- // * - Comments
- int comments() {
-     return 0;
- }
- // * - Arithmetic Operators
- int arithmeticOperators() {
-     return 0;
- }
- // * - Relational Operators
- int relationalOperators() {
-     return 0;
- }
- // * - Logical Operators
- int logicalOperators() {
-     return 0;
- }
- // * - Symbolic Constants and Naming Conventions
- int symbolicConstants() {
-     return 0;
- }
- // * - Keyboard Input
- int keyboardInput() {
-     return 0;
- }
+ // * - Selection Control Statements
+ // * - Repetition Control Statements
+ // * - Break & Continue
+ // * - Random Numbers
 
 /* *
-* Section 2: Fundamentals
+* Section 3: Control Statements
 *
 * Projects
 * ---------
 * * * * * */
- // * - Project Average Of Three
- int averageOfThree() {
+ // * - Project Jam Of The Month Club
+ int runJamOfTheMonthClub() {
      return 0;
  }
- // * - Project Madlibs Clone
- int madLibs() {
+ // * - Project Odds & Evens
+ int runOddsAndEvens() {
     return 0;
  }
+// * - Project Guess The Number
+int runGuessTheNumber() {
+    return 0;
+}
 
 
 int main() {
-    cout << "Hello, Dustin! Running Section 2 C++ Modules!" << endl;
-    runVariablesModule();
+    cout << "Hello, Dustin! Running Section 3 C++ Modules!" << endl;
+
     return 0;
 }
