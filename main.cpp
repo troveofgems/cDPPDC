@@ -2,55 +2,78 @@
 
 using namespace std;
 /* *
- * Section 4: Arrays & Vectors
+ * Section 5: Functions
  *
  * Objectives
  * ----------
  * * * * * * */
-// * - Built-In Arrays
-int runBuiltInArraysModule() {
+// * - Function Prototypes & Definitions
+int functionProtoDefsTest() {
     return 0;
 }
 
-// * - Array Class
-int runArrayClassModule() {
+// * - Function Return Types & Parameters
+int functionTypesAndParamsTest() {
     return 0;
 }
 
-// * - Vector Class
-int runVectorClassModule() {
+// * - Parameter Passing: Pass-By-Val vs Pass-By-Ref
+int functionParameterPassingTest() {
     return 0;
 }
 
-// * - Multi-dimensional arrays
-int runMultiDimensionalModule() {
+// * - Variable Scope & Life-time
+int functionVarScopeLifecycleTest() {
     return 0;
 }
 
+// * - Function Overloading
+int functionOverloadingTest() {
+    return 0;
+}
+
+// * - cMath Library
+int functionCMathLibTest() {
+    return 0;
+}
+
+// * - Function Recursion
+int functionRecursionTest() {
+    return 0;
+}
 
 /* *
-* Section 4: Arrays & Vectors
+* Section 5: Functions
 *
 * Projects
 * ---------
 * * * * * */
-// * - Project Array Data
-int runArrayData() {
+// * - Project Product Of Three
+int productOfThreeTest() {
     return 0;
 }
 
-// * - Project Vector Data
-int runVectorData() {
+// * - Project Sum Of Built-in Array Elements
+int sumBuiltInTest() {
     return 0;
 }
 
-// * - Parallel Arrays & Vectors
-int runParallelTest() {
+// * - Project Sum Of Array Object Elements
+int sumArrayObjectTest() {
     return 0;
 }
 
+// * - Project Retrieving the sum of Array Object Elements By Reference
+int sumByRefTest() {
+    return 0;
+}
+
+// * - Project Tic-Tac-Toe
+int ticTacToeTest() {
+    return 0;
+}
 
 int main() {
-    cout << "Hello, Dustin! Running Section 4 C++ Modules!" << endl;
+    cout << "Hello, Dustin! Running Section 5 C++ Modules!" << endl;
     return 0;
 }
