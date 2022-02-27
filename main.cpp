@@ -1,46 +1,45 @@
 #include <iostream>
 
 using namespace std;
+
 /* *
- * Section 6: Classes & Objects
+ * Section 7: Exceptions & Debugging
  *
  * Objectives
  * ----------
  * * * * * * */
-// * - Basics of OOP
-void oopBasicsTest();
+// * - Exceptions and the Exception Hierarchy
+void exceptionsHierarchyTest();
 
-// * - Encapsulation
-void encapsulationTest();
+// * - Logic Errors
+void logicErrorsTest();
 
-// * - Separate Compilation
-void separateCompilationTest();
+// * - Runtime Errors & Throwing Exceptions
+void runtimeErrorsAndExceptions();
 
-// * - Constructor/Destructor Concepts
-void constructorsAndDestructorsTest();
+// * - Rethrowing Exceptions
+void rethrowingExceptionsTest();
 
-// * - Rectangle Class
-void rectangleClassExample();
+// * - Custom Exceptions
+void customExceptionsTest();
 
-// * - Book Class
-void bookClassExample();
+// * - Basic Testing & Debugging
+void basicTestingAndDebugging();
 
 /* *
-* Section 6: Classes & Objects
+* Section 7: Exceptions & Debugging
 *
 * Projects
 * ---------
 * * * * * */
-// * - Project Back Account Class
-void bankAccountClassProject();
+// * - Project Manage Out Of Range Errors
+void handleOutOfRangeExceptionProject();
 
-// * - Project Pizza Class
-void pizzaClassProject();
+// * - Project Create Custom Exceptions
+void createCustomExceptionsProject();
 
-// * - Project Circle Class
-void circleClassProject();
-
-int main() {
-    cout << "Hello, Dustin! Running Section 6 C++ Modules!" << endl;
+int main()
+{
+    cout << "Hello, Dustin! Running Section 7 C++ Modules!" << endl;
     return 0;
 }
