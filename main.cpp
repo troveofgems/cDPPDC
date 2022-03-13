@@ -1,45 +1,41 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 /* *
- * Section 7: Exceptions & Debugging
+ * Section 8: Pointers
  *
  * Objectives
  * ----------
+ *  - Intro To Pointers
+ *  - Dynamic Memory
+ *  - Const Correctness
  * * * * * * */
-// * - Exceptions and the Exception Hierarchy
-void exceptionsHierarchyTest();
 
-// * - Logic Errors
-void logicErrorsTest();
+// * - Intro To Pointers
+void introToPointersTest();
 
-// * - Runtime Errors & Throwing Exceptions
-void runtimeErrorsAndExceptions();
+// * - Dynamic Memory
+void dynamicMemoryTest();
 
-// * - Rethrowing Exceptions
-void rethrowingExceptionsTest();
-
-// * - Custom Exceptions
-void customExceptionsTest();
-
-// * - Basic Testing & Debugging
-void basicTestingAndDebugging();
+// * - Const Correctness
+void constCorrectnessTest();
 
 /* *
-* Section 7: Exceptions & Debugging
+* Section 8: Pointers
 *
 * Projects
 * ---------
 * * * * * */
-// * - Project Manage Out Of Range Errors
-void handleOutOfRangeExceptionProject();
+// * - Project Dynamically Creating Rectangles
+void dynamicallyCreateRectanglesProject();
 
-// * - Project Create Custom Exceptions
-void createCustomExceptionsProject();
+// * - Project Dynamically Creating Circles
+void dynamicallyCreateCirclesProject();
 
 int main()
 {
-    cout << "Hello, Dustin! Running Section 7 C++ Modules!" << endl;
+    cout << "Hello, Dustin! Running Section 8 C++ Modules!" << endl;
     return 0;
 }
