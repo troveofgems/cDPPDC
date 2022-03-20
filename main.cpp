@@ -2,6 +2,8 @@
 #include <string>
 
 #include "DynamicDogs.h"
+#include "DynamicRectangles.h"
+#include "DynamicCircles.h"
 
 using namespace std;
 
@@ -44,13 +46,16 @@ void dynamicallyCreateRectanglesProject();
 
 // * - Project Dynamically Creating Circles
 void dynamicallyCreateCirclesProject();
+void printDynamicallyCreatedCircles(DynamicCircle** circleArray, int numberOfCircles);
 
 int main()
 {
     cout << "Hello, Dustin! Running Section 8 C++ Modules!" << endl;
-    introToPointersTest();
-    dynamicMemoryTest();
-    constCorrectnessTest();
+    //introToPointersTest();
+    //dynamicMemoryTest();
+    //constCorrectnessTest();
+    //dynamicallyCreateRectanglesProject();
+    dynamicallyCreateCirclesProject();
     return 0;
 }
 
@@ -270,4 +275,64 @@ void noChange(const double* const myDouble)
 
     delete myDouble;
     //myDouble = new double(1.58);
+}
+
+void dynamicallyCreateRectanglesProject()
+{
+    cout << "Running the Dynamically Created Rectangles Project" << endl;
+    const int ARR_SIZE = 3;
+    DynamicRectangle* rectanglePtrs[ARR_SIZE];
+
+    rectanglePtrs[0] = new DynamicRectangle(5, 3);
+    rectanglePtrs[1] = new DynamicRectangle(20, 40);
+    rectanglePtrs[2] = new DynamicRectangle(2, 10);
+
+    for (int i = 0; i < ARR_SIZE; i += 1)
+    {
+        cout << "Rectangle " << i << ": " << endl;
+        cout << "\tPerimeter: " << rectanglePtrs[i]->perimeter() << endl;
+        cout << "\tArea: " << rectanglePtrs[i]->area() << endl;
+        cout << endl;
+    }
+
+    for (int i = 0; i < ARR_SIZE; i += 1)
+    {
+        delete rectanglePtrs[i];
+        rectanglePtrs[i] = nullptr;
+    }
+}
+
+void dynamicallyCreateCirclesProject()
+{
+    cout << "Running the Dynamically Created Rectangles Project" << endl;
+    int howMany = 0;
+    int radius = 0;
+
+    cout << "How many circles would you like to create? " << endl;
+    cin >> howMany;
+
+    DynamicCircle** circles = new DynamicCircle* [howMany];
+
+    for(int i = 0; i < howMany; i += 1)
+    {
+        double radius = 0.0;
+        cout << "What radius for circle " << i << "?" << endl;
+        cin >> radius;
+
+        circles[i] = new DynamicCircle(radius);
+    }
+
+    cout << endl;
+    printDynamicallyCreatedCircles(circles, howMany);
+}
+
+void printDynamicallyCreatedCircles(DynamicCircle** circleArray, int numberOfCircles)
+{
+    for(int i = 0; i < numberOfCircles; i += 1)
+    {
+        cout << "Circle " << i << endl;
+        cout << "\t Circumference: " << circleArray[i]->getCircumference() << endl;
+        cout << "\t Area: " << circleArray[i]->getArea() << endl;
+        cout << endl;
+    }
 }
